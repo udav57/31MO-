@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[left=2cm,right=2cm, top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\title{variant 2}
+\author{Vladimir Voronov}
+\date{May 2024}
+
+\begin{document}
+\maketitle
+Функция $\upsilon (x,t)$, очевидно, удовлетворяет однородному уравнению
+$$\rho \frac{\partial^{2} \upsilon}{\partial t^{2}}  =\joinrel=  \frac{\partial}{\partial x} (k \frac{\partial \upsilon}{\partial x})  \eqno(77)$$
+и однородным дополнительным условиям
+$$\left.
+  \begin{array}{l}
+    \upsilon (x,0) =\joinrel= 0, \n\ \n\ \n\  \upsilon (0,t) =\joinrel= 0, \\
+    \upsilon_t (x,0) =\joinrel= 0, \n\ \n\ \n\ \upsilon (l,t) =\joinrel= 0, 
+  \end{array}
+\right\}\eqno(78)$$        
+а также условию 1) теоремы.
+
+Докажем, что функция $\upsilon (x,t)$ тождественно равна нулю. 
+
+Рассмотрим функцию 
+$$E(t) =\joinrel= \frac{1}{2}  \int_0^l {{k({\upsilon_x}^{2}) + \rho({\upsilon_t}^{2})}} dx  \eqno(79)$$
+и покажем, что она не зависит от $t$. Физический смфсл функции $E(t)$ очевиден: это полная энергия струны в момент времени $t$. Продифференцируем $E(t)$ по $t$, выполняя при этом дифференцирование под знаком интеграла 1)
+
+$$\frac{dE(t)}{dt} =\joinrel= \int_0^l (k \upsilon_x \upsilon_{xt} + \rho \upsilon_t \upsilon_{tt}) dx . $$
+Интегрируя по частям первое слагаемое правой части, будем иметь: 
+$$\int_0^l k \upsilon_x \upsilon_{xt}dx  =\joinrel=  [k \upsilon_x \upsilon_t] - \int_0^l \upsilon_t (k \upsilon_x)_{x} dx. \eqno(80)$$
+Подстановка обращается в нуль в силу граничных условий (из $\upsilon (0, t) =\joinrel= 0$ следует $\upsilon (0, t) =\joinrel= 0$  и аналогично для $х =\joinrel= l$  ) . Отсюда следует, что
+
+$$\frac{dE(t)}{dt} =\joinrel= \int_0^l [\rho \upsilon_t \upsilon_{tt} -\upsilon_t (k\upsilon_x)_{x}] dx =\joinrel= \int_0^l \upsilon_t[\rho \upsilon_{tt} -(k\upsilon_x)_{x} dx =\joinrel= 0, $$
+т. е. $E(t)$ = const. Учитывая начальные условия, получаем:
+$$E(t) =\joinrel= const =\joinrel= E(0) =\joinrel=  \frac{1}{2}  \int_0^l [k({\upsilon_x}^{2}) + \rho({\upsilon_t}^{2})]_{t=0} dx =\joinrel= 0,  \eqno(81)$$
+
+\textbf{------------------------}
+\linebreak
+
+
+
+1)Для дифференцирования под знаком интеграла достаточно, чтобы получаемое при этом подынтегральное выражение было непрерывно на отрезке $0 \leq x \leq l$ при $t \geq 0$. Это требование в нашем случае выполнено, так как функция $\upsilon (x,t)$ удовлетворяет условию 1) теоремы, а $\rho(x)$ и $k(x)$ -- условию 2).
+\newpage
+\raggedright так как
+$$\upsilon(x,0) =\joinrel= 0, \n\ \n\ \upsilon_t (x,0)=\joinrel= 0. $$
+Пользуясь формулой (81) и положительностью $k$ и $\rho$, заключаем, что
+$$\upsilon_x (x,t) \equiv 0, \n\ \n\ \upsilon_t (x,t) \equiv 0, $$
+откуда и следует тождество
+$$\upsilon(x,t) =\joinrel= const =\joinrel=  C_0 . \eqno(82) $$
+Пользуясь начальным условием, находим:
+$$\upsilon(x,0) =\joinrel= C_0 =\joinrel=  0 ; $$
+тем самым доказано, что
+$$\upsilon (x,t) \equiv 0 . \eqno (83)$$
+Следовательно, если существуют две функции $u_1(x,t)$ и $u_2(x,t)$, удовлетворяющие всем условиям теоремы, то $u_1(x,t) \equiv u_2(x,t)$. 
+
+Для второй краевой задачи функция $\upsilon = u_1 - u_2$ удовлетворяет граничным условиям
+$$\upsilon_x(0,t) =\joinrel= 0, \n\ \n\ \upsilon_x(l,t) =\joinrel= 0 , \eqno(84)$$
+и подстановка в формуле (80) также обращается в нуль. Дальнейшая часть доказательства теоремы остается без изменений. 
+
+Для третьей краевой задачи доказательство требует некоторого видоизменения. Рассматривая по-прежнему два решения $u_1$ и $u_2$, получаем для их разности $\upsilon = u_1 - u_2$ уравнение (77) и граничные условия
+$$\left.
+  \begin{array}{l}
+    \upsilon_x (0,t) - h_1 \upsilon (0,t) =\joinrel= 0, \n\ \n\ \n\  (h_1 \geq 0), \\
+    \upsilon_x (l,t) + h_2 \upsilon (l,t) =\joinrel= 0, \n\ \n\ \n\ (h_2 \geq 0). 
+  \end{array}
+\right\}\eqno(85)$$  
+Представим подстановку в (80) в виде
+$$[k \upsilon_x \upsilon_t] = -\frac{k}{2} \frac{\partial}{\partial t} [h_2 \upsilon^{2} (l,t) + h_1 \upsilon^{2} (0,t)]. $$
+Интегрируя $\frac{dE}{dt}$ в пределах от нуля до $t$, получим:
+$$E(t) - E(0) =\joinrel=  \int_0^t \int_0^l \upsilon_t [\rho \upsilon_{tt} - (k(\upsilon_x)_x] dx \n\ dt -  \frac{k}{2} {h_2 [ \upsilon^{2} (l,t) - \upsilon^{2} (l,0)] + h_1 [\upsilon^{2} (0,t) - \upsilon^{2} (0,0)]}, $$
+откуда в силу уравнения и начальных условий следует:
+$$E(t)  =\joinrel=   \frac{k}{2} [h_2 \upsilon^{2} (l,t) ] + h_1 \upsilon^{2} (0,t) ] \leq 0. \eqno (86) $$
+\end{document}
