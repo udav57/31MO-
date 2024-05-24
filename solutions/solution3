@@ -1,1 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[english,russian]{babel}
+\usepackage{graphicx} % Required for inserting images
 
+
+\title{Lab1}
+\author{Ксения Санькова}
+\date{12 Апреля 2024}
+
+\begin{document}
+\maketitle{}
+
+\noindent Если в правую часть не входит \(u_{\xi}\), то это уравнение будет обыкновенным дифференциальным уравнением, зависящим от \(\xi\) как от параметра. 
+
+3. Для уравнения элептического типа \(a_{12}^ {2}\) --- \(a_{11}\)\(a_{22}\) < 0 и правые части уравнений (9) и (10) комплексны. Пусть 
+$$\phi(x,y)=\joinrel=C$$ -- комплексный интеграл уравнения (9). Тогда 
+$$\phi^*(x,y)=\joinrel=C,$$ где \(\phi^*\) --- сопряженная к \(\phi\) функция, будет представлять собой общий интеграл сопряженного уравнения (10). Перейдем к комплексным переменным, полагая
+$$\xi=\joinrel=\phi(x,y),\    \ \eta=\joinrel=\phi^*(x,y).$$ При этом уравнение эллиптического типа приводится к такому же виду, что и гиперболическое.
+
+Чтобы не иметь дела с комплексными переменными, введем новые пременные \(\alpha\) и \(\beta\), равные 
+$$\alpha=\joinrel=\frac{\phi+\phi^*}{2},\    \ \beta=\joinrel=\frac{\phi-\phi^*}{2i},$$ так что 
+$$\xi=\joinrel=\alpha+i\beta,\    \ \eta=\joinrel=\alpha-i\beta.$$ В этом случае \newline
+\(a_{11}\xi_{x}^{2}+2a_{12}\xi_{x}\xi_{y}+a_{22}\xi_{y}^{2}=\joinrel=\)
+
+\(=\joinrel=(a_{11}\alpha_{x}^{2}+2a_{12}\alpha_{x}\alpha_{y}+a_{22}\alpha_{y}^{2})- (a_{11}\beta_{x}^{2}+2a_{12}\beta_{x}\beta_{y}+a_{22}\beta_{y}^{2})+ \)
+\begin{flushright}
+\(+2i(a_{11}\alpha_{x}\beta_{x}+a_{12}(\alpha_{x}\beta_{y}+\alpha_{y}\beta_{x})+a_{22}\alpha_{y}\beta_{y})=\joinrel=0, \)
+\end{flushright}
+т. е.
+\begin{center} 
+\(\overline{a}_{11}=\joinrel=\overline{a}_{22}\) и \(\overline{a}_{12}=\joinrel=0\)
+\end{center} 
+Уравнение (4) после деления на коэффициент при  \(u_{\alpha\alpha}\) принимает вид 
+$ \leftindex^1 {)}$
+$$u_{\alpha\alpha}+u_{\beta\beta}=\joinrel=\Phi(\alpha,\!\ \beta,\!\ u,\!\ u_{\alpha},\!\ u_{\beta})\    \ (\Phi=\joinrel=- \frac{\overline{F}}{\overline{a}_{22}}).$$ Таким образом, в зависимости от знака выражения \(a_{12}^{2} - a_{11}a_{22}\) имеют место следующие канонические формы уравнения (1): \newline
+\(a_{12}^{2} - a_{11}a_{22}\) > 0\ \ (гиперболический тип)\ \ \(u_{xx}-u_{yy}=\joinrel=\Phi\) или \(u_{xy}=\joinrel=\Phi,\) \newline
+\(a_{12}^{2} - a_{11}a_{22}\) < 0\  \ (эллиптический тип)\ \ \(u_{xx}+u_{yy}=\joinrel=\Phi,\) \newline
+\(a_{12}^{2} - a_{11}a_{22}\) = 0\ \ (параболический тип)\ \ \(u_{xx}=\joinrel=\Phi.\) \newline
+
+\textbf{2. Классификация уравнений 2-го порядка со многими независимыми переменными.} Рассмотрим линейное уравнение с действительными коэффицентами
+$$\sum \limits_{j=1}^{n}\sum \limits_{i=1}^{n}a_{ij}u_{x_{i}x_{j}}+\sum \limits_{i=1}^{n}b_{i}u_{x_{i}}+cu+f=\joinrel=0\    \ (a_{ij}=\joinrel=a_{ji}), \eqno(12)$$
+где \textit{a, b, c, f} являются функциями \(x_{1}\), \(x_{2}\), \ldots, \(x_{n}\). Введем новые независимые переменные \(\xi_{k}\), полагая                       
+$$\xi_{k}=\joinrel=\xi_{k}(x_{1},\ \ x_{2},\ \ \ldots,\ \ x_{n})\  \ (\textit{k}=\joinrel=1,\ \ \ldots,\ \ n).$$
+Тогда 
+$$u_{x_{j}}=\joinrel=\sum \limits_{k=1}^{n}u_{\xi_{k}}\alpha_{ik},\ \ u_{x_{i}x_{j}}=\joinrel=\sum \limits_{k=1}^{n}\sum \limits_{l=1}^{n}u_{\xi_{k}\xi_{l}}\alpha_{ik}\alpha_{jl} + \sum \limits_{k=1}^{n}u_{\xi_{k}}(\xi_{k})_{x_{i}x_{j}},$$
+где
+$$\alpha_{ik}=\joinrel=\frac{\partial\xi_{k}}{\partial x_{i}}.$$
+Подставляя выражения для производных в исходное уравнение, получим:
+$$\sum \limits_{k=1}^{n}\sum \limits_{l=1}^{n}\overline{a}_{kl}u_{\xi_{k}\xi_{l}} + \sum \limits_{k=1}^{n}\overline{b}_{k}u_{\xi_{k}} + cu + f =\joinrel=0,$$
+где
+$$\overline{a}_{kl}=\joinrel=\sum \limits_{i=1}^{n}\sum \limits_{j=1}^{n}a_{ij}\alpha_{ik}\alpha_{jl}, \ \ \overline{b}_{k}=\joinrel=\sum \limits_{i=1}^{n}b_{i}\alpha_{ik}\!\ + \sum \limits_{i=1}^{n}\sum \limits_{j=1}^{n}a_{ij}(\xi_{k})_{x_{i}x_{j}}.$$
+
+Рассмотрим квадратическую форму
+$$\sum \limits_{i=1}^{n}\sum \limits_{j=1}^{n}a_{ij}^{0}y_{i}y_{j},    \eqno(13)$$
+коэффициенты которой равны коэффициентам \(a_{ij}\) исходного уравнения в некоторой точке 
+\end{document}
