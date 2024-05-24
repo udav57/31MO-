@@ -2,7 +2,7 @@
 Хранилище со всеми необходимыми файлами для изучения димциплины "Основы информациооных технологий и специализированных пакетов для профессиональной деятельности"
 
 
-| Week | Lecture notebooks | Supplementary materials | Homework | Tests |
+| Номер лабораторной | Условие | Решение | Вспомогательные материалы
 |:------:|:----------|:----------:|:----------:|-------|
 |1| General info [[GitHub](lectures/general_info.ipynb)] | 123 | 123
 | 2 | Lecture 4. Matrix rank, low-rank approximation, SVD. [[GitHub](./lectures/lecture4/lecture-4.ipynb)] <br> Lecture 5. Linear systems [[GitHub](./lectures/lecture5/lecture-5.ipynb)] <br> Lecture 6. Eigenvalues and eigenvectors [[GitHub](./lectures/lecture6/lecture-6.ipynb)]|  | 
