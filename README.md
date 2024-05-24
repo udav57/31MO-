@@ -9,4 +9,4 @@
 | 3 |  Latex-Часть 1(Статья) [[GitHub](./conditions/zadanie3)] | [[Kaiten](./solutions/solution1.jpeg)] | [[Осваиваем LaTeX за 30 минут](https://habr.com/ru/companies/ruvds/articles/574352/)]
 | 4 |  Latex-Часть 2(Работа с формулами)  [[GitHub](./conditions/zadanie4)] | [[Kaiten](./solutions/solution1.jpeg)] | [[Как красиво писать формулы c LaTeX?](https://habr.com/ru/articles/723564/)]
 | 5 |  Latex-Часть 3(Презентация) [[GitHub](./conditions/zadanie5)] | [[Kaiten](./solutions/solution1.jpeg)] | [[Пишем презентации в LaTeX](https://habr.com/ru/articles/471352/)]
-| 6 |  Организация данных с помощью Tableau [[GitHub](./conditions/zadanie6)] | [[Kaiten](./solutions/solution1.jpeg)] | [[Видеогид для начала работы в Кайтен](https://kaiten.ru/blog/video-guide/)]
+| 6 |  Организация данных с помощью Tableau [[GitHub](./conditions/zadanie6)] | [[Kaiten](./solutions/solution1.jpeg)] | [[Гайд по Tableau](https://habr.com/ru/articles/428159/)]
