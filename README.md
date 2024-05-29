@@ -10,3 +10,4 @@
 | 4 |  Latex-Часть 2(Работа с формулами)  [[GitHub](./conditions/zadanie4)] | [[Github](./solutions/solution3)] | [[Как красиво писать формулы c LaTeX?](https://habr.com/ru/articles/723564/)]
 | 5 |  Latex-Часть 3(Презентация) [[GitHub](./conditions/zadanie5)] | [[Github](./solutions/solution4)] | [[Пишем презентации в LaTeX](https://habr.com/ru/articles/471352/)]
 | 6 |  Организация данных с помощью Tableau [[GitHub](./conditions/zadanie6)] | [[???](./solutions/solution5)] | [[Гайд по Tableau](https://habr.com/ru/articles/428159/)]
+| 7 |  Организация данных в Github [[GitHub](./conditions/zadanie6)] | [[???](./solutions/solution5)] | [[Гайд по Tableau](https://habr.com/ru/articles/428159/)]
